@@ -1,0 +1,117 @@
+body {
+  backdrop-filter: blur(1em);
+  height: 100vh;
+  z-index: 12;
+}
+.deck__div-div-div {
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+.deck__tendencies {
+  height: calc(84.8vh - 5.5em);
+  /* background: red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.deck__tendencies-deck {
+  width: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  width: 100%;
+  height: 20em;
+  flex-wrap: wrap;
+}
+.deck__tendencies-left {
+  width: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  width: 100%;
+  height: 20em;
+  position: absolute;
+}
+.deck__none {
+  pointer-events: none;
+}
+.deck__render {
+  width: 10em;
+  height: 10em;
+  fill: #ed8995;
+  transition: 0.5s ease;
+  cursor: pointer;
+  position: relative;
+}
+.deck__item-render-span {
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  /* height: 30em; */
+  background: transparent;
+  z-index: 15;
+}
+.deck__render:hover {
+  transform: scale(1.1);
+}
+.deck__render-span {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+}
+.deck__tendencies-div-blue-eyes {
+  width: 42em;
+  padding: 1em;
+  background: #eeeeee80;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 1em;
+  margin: 18em 0 0 0;
+  height: 60vh;
+  align-items: center;
+  color: #222;
+  font-family: 'Roboto Flex';
+  text-shadow: 0 0 0.5em #eee, 0 0 1em #eee;
+  display: none;
+  z-index: 5;
+}
+.blue-eyes-mostrar {
+  display: flex;
+  z-index: 15;
+}
+.deck__svg-blue-eyes {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  cursor: pointer;
+}
+.deck__h2 {
+  margin: 0;
+}
+.deck__div {
+  display: flex;
+  gap: 1em;
+  flex-flow: row wrap;
+}
+.deck__tendencies-img {
+  width: 4em;
+  height: 5.9em;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}

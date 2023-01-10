@@ -1,0 +1,10 @@
+.atributte__div-container {
+  display: flex;
+  gap: 0.2em;
+  align-items: center;
+  font-family: "Roboto Flex";
+  font-weight: bold;
+}
+.img__atributte {
+  width: 1em;
+}

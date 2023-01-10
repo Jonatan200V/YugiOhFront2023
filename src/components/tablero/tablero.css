@@ -1,0 +1,155 @@
+.tablero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  background: url(../../../public/assets/tablero.png);
+  background-size: cover;
+  position: relative;
+}
+.x {
+  width: 1000px;
+  display: flex;
+}
+.tablero__right {
+  width: 30%;
+  border-right: 0.6em solid #222;
+  padding: 0 0.2em;
+  border-left: 0.6em solid #222;
+}
+.tablero__right-carta {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.6em solid #222;
+}
+.tablero__right-p {
+  margin: 0;
+  text-align: center;
+  color: #eee;
+  padding: 0.5em;
+}
+.tablero__right-img {
+  height: 27.5em;
+  object-fit: cover;
+}
+.tablero__right-descripcion {
+  margin: 0;
+  padding: 0;
+  height: 40%;
+  font-weight: bold;
+  text-align: center;
+  color: #eee;
+}
+.tablero__left {
+  width: 70%;
+  border-right: 0.6em solid #222;
+}
+.tablero__left-tablero {
+  height: 85%;
+  position: relative;
+}
+.tablero__left-top {
+  height: 60%;
+}
+.tablero__img-random {
+  width: 12em;
+  height: 18em;
+  position: absolute;
+  right: 65px;
+  top: 10px;
+  transform: rotate(220deg);
+}
+.tablero__left-bottom {
+  height: 40%;
+  display: flex;
+  /* justify-content: end; */
+  align-items: center;
+  /* position: relative; */
+}
+.tablero__card {
+  width: 12em;
+  height: 18em;
+  transform: rotate(37deg);
+  position: absolute;
+  left: 4.2em;
+  top: 62%;
+}
+.ataque {
+  animation: atacar 1.5s linear;
+}
+.ataque2 {
+  animation: atacar2 1.5s linear;
+  animation-delay: 2s;
+}
+.tablero__left-notas {
+  height: 15%;
+  display: flex;
+  border-top: 0.5em solid #222;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+}
+.tablero__span {
+  position: absolute;
+  /* left: 0; */
+  /* margin: 0; */
+  /* bottom: 0; */
+  /* right: 0; */
+  top: 40%;
+  padding: 1.5em;
+  font-size: 3em;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  margin: auto;
+  /* background: red; */
+  transition: 0.5s ease;
+  display: none;
+}
+.winer {
+  color: #98d87a;
+  display: block;
+  background: #222;
+  width: 10em;
+  text-align: center;
+}
+.loser {
+  color: #b84a4a;
+  display: block;
+  background: #222;
+  width: 10em;
+  text-align: center;
+}
+.empate {
+  color: #978585;
+  background: #222;
+  width: 10em;
+  text-align: center;
+  display: block;
+}
+@keyframes atacar {
+  0% {
+    left: 4.2em;
+    top: 62%;
+    transform: rotate(37deg) scale(1);
+  }
+  100% {
+    left: 62%;
+    top: 0;
+    transform: rotate(37deg) scale(0.5);
+  }
+}
+@keyframes atacar2 {
+  0% {
+    right: 35px;
+    bottom: 62%;
+    transform: rotate(220deg) scale(1);
+  }
+  100% {
+    right: 70%;
+    top: 70%;
+    transform: rotate(220deg) scale(0.5);
+  }
+}

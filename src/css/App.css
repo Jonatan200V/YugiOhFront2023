@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,700;8..144,1000&family=Yusei+Magic&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url('../../public/assets/ygo.png');
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  border: 2px solid #2c3528;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #5f7457, #96c991);
+  border-radius: 10px;
+}
+.cartas__container {
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  max-width: 60em;
+  margin: auto;
+  min-height: 70vh;
+}
+/* .cartas__container { */
+/* background: red; */
+/* } */
+.centrar__button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.carta {
+  position: relative;
+  flex-basis: 15em;
+  display: flex;
+  height: 20em;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background: #00143d;
+  box-shadow: 0 0 1em #00143d, 0 0 1.5em #00143d, 0 0 2em #00143d,
+    0 0 3em #00143d;
+  border-radius: 0.4em;
+  /* padding: 0.8em; */
+  /* background: black; */
+}
+.carta__name-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+}
+.carta__button {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 2.3em;
+  height: 2.3em;
+  padding: 0.35em;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffa600;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+.carta__name {
+  text-align: center;
+  font-family: 'Roboto Flex';
+  font-size: 1.2em;
+  color: #eee;
+  text-shadow: 0 0 0.4em #fff, 0 0 0.8em #fff;
+  position: relative;
+  z-index: 10;
+  align-self: center;
+  justify-self: center;
+  flex-grow: 1;
+}
+.carta__img-img {
+  transform: scale(0.8);
+  transition: 0.5s ease;
+}
+.star {
+  transform: scale(1.3);
+}
+
+.carta__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  width: 9em;
+  height: 14em;
+  position: relative;
+  z-index: 10;
+  border-radius: 0.4em;
+}
+.carta__img:hover {
+  transform: scale(1.1);
+}
+.cuadrado {
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  background: transparent;
+  box-shadow: inset 0 0 0.5em #07406f, inset 0 0 1em #07406f, 0 0 1.5em #07406f,
+    0 0 1em #07406f;
+  top: 0;
+  left: 0;
+  animation: desplazar 1.5s linear infinite;
+  animation-direction: alternate-reverse;
+  pointer-events: none;
+}
+
+.cuadrado:nth-of-type(2) {
+  top: 6%;
+  animation-delay: 0.3s;
+}
+.cuadrado:nth-of-type(3) {
+  top: 12%;
+  left: 92.5%;
+  animation: desplazar2 2.5s linear infinite;
+  animation-direction: alternate-reverse;
+  animation-delay: 0.9s;
+}
+.cuadrado:nth-of-type(4) {
+  top: 18%;
+  animation-delay: 0.5s;
+}
+.cuadrado:nth-of-type(5) {
+  top: 24%;
+  animation-delay: 1s;
+}
+.cuadrado:nth-of-type(6) {
+  top: 30%;
+  left: 92.5%;
+  animation: desplazar2 2.5s linear infinite;
+  animation-direction: alternate-reverse;
+  animation-delay: 0.3s;
+}
+.cuadrado:nth-of-type(7) {
+  top: 36%;
+  animation-delay: 1.4s;
+}
+.cuadrado:nth-of-type(8) {
+  top: 42%;
+  animation-delay: 0.5s;
+}
+.cuadrado:nth-of-type(9) {
+  top: 48%;
+  left: 92.5%;
+  animation: desplazar2 2.5s linear infinite;
+  animation-direction: alternate-reverse;
+  animation-delay: 0.1s;
+}
+.cuadrado:nth-of-type(10) {
+  top: 54%;
+}
+.cuadrado:nth-of-type(11) {
+  top: 60%;
+  animation-delay: 1.5s;
+}
+.cuadrado:nth-of-type(12) {
+  top: 66%;
+  left: 92.5%;
+  animation: desplazar2 2.5s linear infinite;
+  animation-direction: alternate-reverse;
+  animation-delay: 0.7s;
+}
+.cuadrado:nth-of-type(13) {
+  top: 72%;
+  animation-delay: 1s;
+}
+.cuadrado:nth-of-type(14) {
+  top: 78%;
+  animation-delay: 0.6s;
+}
+.cuadrado:nth-of-type(15) {
+  top: 84%;
+  left: 92.5%;
+  animation: desplazar2 2.5s linear infinite;
+  animation-direction: alternate-reverse;
+  animation-delay: 0.75s;
+}
+.cuadrado:nth-of-type(16) {
+  top: 90%;
+  animation-delay: 1s;
+}
+.cuadrado:nth-of-type(17) {
+  top: 96%;
+  left: 92.5%;
+  animation: desplazar2 2.5s linear infinite;
+  animation-direction: alternate-reverse;
+  animation-delay: 0.3s;
+}
+.cuadrado:nth-of-type(18) {
+  top: 99%;
+  left: 92.5%;
+  animation: desplazar2 2.5s linear infinite;
+  animation-direction: alternate-reverse;
+  animation-delay: 0.3s;
+}
+@keyframes desplazar {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 92.5%;
+  }
+}
+@keyframes desplazar2 {
+  0% {
+    left: 92.5%;
+  }
+  100% {
+    left: 0;
+  }
+}
+/*# sourceMappingURL=App.css.map */

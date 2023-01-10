@@ -1,0 +1,12 @@
+.container__decards-div {
+  width: 100%;
+  backdrop-filter: blur(1em);
+}
+.contenedor__cartas {
+  padding: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1em;
+  max-width: 900px;
+  margin: auto;
+}

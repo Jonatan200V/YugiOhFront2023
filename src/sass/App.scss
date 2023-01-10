@@ -1,0 +1,31 @@
+@import "./imports/reset.scss", "./imports/Fonts.scss";
+//"Yusei Magic"
+.cartas {
+  &__container {
+    background: #222;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+  }
+}
+
+.carta {
+  flex-basis: 16.875em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  &__name {
+    text-align: center;
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 2em;
+    color: #222;
+  }
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // height: 393px;
+  }
+}

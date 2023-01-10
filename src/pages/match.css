@@ -1,0 +1,74 @@
+.container__match {
+  height: 75.4vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  font-family: "Roboto Flex";
+  color: #eee;
+  text-shadow: 0 0 0.8em #000;
+  display: flex;
+}
+.mostarcartas__match {
+  width: 45em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 2em;
+  position: relative;
+  flex-grow: 1;
+}
+.mostarcartas__match-bottom {
+  width: 45em;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 2em;
+  position: relative;
+  flex-grow: 1;
+}
+
+.img__match {
+  width: 6em;
+  height: 9em;
+}
+.container__modal {
+  /* background: black; */
+  height: 50vh;
+  width: 100vw;
+  height: calc(100vh - 7em);
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(0.2em);
+}
+.modal__img {
+  width: 20em;
+  height: 30em;
+  /* background: #fff; */
+  display: flex;
+  justify-content: center;
+}
+.modal__i {
+  position: absolute;
+  right: -50px;
+  top: -50px;
+}
+.modal__img-div {
+  position: relative;
+}
+.modal__img-img {
+  width: 16.6em;
+  height: 25em;
+}
+
+.modal__button {
+  margin: 0.2em 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}

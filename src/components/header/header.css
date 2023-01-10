@@ -1,0 +1,47 @@
+.header {
+  height: 5em;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.contenedor__de-linkss {
+  flex-basis: 300px;
+  display: flex;
+  /* background: red; */
+  justify-content: space-around;
+  align-items: center;
+}
+.link__div {
+  transition: 0.5s ease;
+}
+
+.link__div:hover {
+  transform: scale(1.2);
+}
+.link__svg {
+  width: 3em;
+  fill: #00000090;
+  transition: 0.5s ease;
+}
+
+.link__svg-deek {
+  width: 2.4em;
+  fill: #00000090;
+  transition: 0.5s ease;
+}
+.link__svg-deek-tendencia {
+  width: 4.5em;
+  height: 5.4em;
+  fill: #00000090;
+  transition: 0.5s ease;
+}
+.link__svg:hover {
+  transform: scale(1.2);
+}
+.link__svg-deek:hover {
+  transform: scale(1.2);
+}
+.link__svg-deek-tendencia:hover {
+  transform: scale(1.2);
+}

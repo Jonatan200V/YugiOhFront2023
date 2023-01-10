@@ -1,0 +1,28 @@
+.favorits {
+  display: flex;
+  justify-content: center;
+  margin: 1em 0 0 0;
+}
+.favorits__container {
+  display: flex;
+  min-width: 50em;
+  max-width: 53em;
+  /* background: red; */
+  gap: 0.5em;
+  height: 74vh;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.favorits__h1 {
+  font-family: "Yusei Magic";
+  letter-spacing: 0.08em;
+  color: #eee;
+}
+.favorits__img {
+  width: 8em;
+  height: 12em;
+  transition: 0.5s ease;
+}
+.favorits__img:hover {
+  transform: scale(1.1);
+}

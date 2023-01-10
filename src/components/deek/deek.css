@@ -1,0 +1,128 @@
+.container__deek {
+  height: 80vh;
+  /* background: red; */
+  padding: 2em;
+  max-width: 56em;
+  margin: auto;
+}
+.container__listcarddeek {
+  height: 100%;
+}
+.deck__name {
+  border: none;
+  height: 1.5em;
+  padding: 0.4em;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: #ffffff50;
+  font-size: 0.9em;
+}
+.deck__button-create {
+  border: none;
+  height: 1.5em;
+  padding: 0.5em;
+  background: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+.container__maindeek {
+  height: 90%;
+  display: flex;
+}
+.container__left {
+  width: 74%;
+  height: 100%;
+  box-shadow: 0 0 1.2em #fff;
+  background: transparent;
+  padding: 0.2em 0.8em;
+}
+
+.container__left-img {
+  width: 4em;
+  height: 6em;
+  margin: 0.5em;
+  transition: 0.5s ease;
+  cursor: pointer;
+  box-shadow: 0 0 0.4em #fff;
+}
+.container__left-img:hover {
+  transform: scale(1.1);
+}
+.container__right {
+  width: 23%;
+  height: 100%;
+  /* background: lightblue; */
+  border-left: 0.2em solid #fff;
+  overflow: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.3em;
+  box-shadow: 0 0 0.4em #fff;
+}
+.container__right-container {
+  display: flex;
+  /* background: green; */
+}
+.container__right-img {
+  width: 4em;
+  height: 6em;
+  cursor: pointer;
+}
+.container__right-div {
+  display: flex;
+  flex-flow: column nowrap;
+  box-shadow: 0 0 0.3em #fff;
+}
+.container__right-h5 {
+  /* background: red; */
+  font-size: 0.7em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 11.1em;
+  height: 3em;
+  flex-shrink: 2;
+  font-family: 'Yusei Magic';
+}
+.container__right-span {
+  font-size: 0.7em;
+  font-weight: bold;
+  /* display: flex; */
+  padding: 0.2em 0.4em;
+  text-align: center;
+}
+.conatainer__right-div-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container__contadorcards {
+  height: 10%;
+  box-shadow: 0 0 1em #fff;
+  font-weight: 'Roboto Flex';
+  font-weight: bold;
+  margin: 0.6em 0 0 0;
+  padding: 0.3em 1em 0 0;
+  display: flex;
+  gap: 1em;
+  flex-direction: row-reverse;
+}
+.contador__cartas {
+  color: #222;
+  margin: 0 0 0 0.5em;
+}
+.contador__magias {
+  color: #029184;
+}
+.contador__trampas {
+  color: #ac417d;
+}
+.contador__monstruos {
+  color: #bc7245;
+}

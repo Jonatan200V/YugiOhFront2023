@@ -1,0 +1,30 @@
+.form__filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.input__filter {
+  width: 18em;
+  height: 2em;
+  border: none;
+  outline: none;
+  padding: 0.4em;
+  background: transparent;
+  border-bottom: 0.2em solid #fff;
+  color: #fff;
+  font-family: "Yusei Magic";
+}
+.button__filter {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 4em;
+  height: 4em;
+  cursor: pointer;
+  fill: #00000090;
+  transition: 0.5s ease;
+}
+.button__filter:hover {
+  transform: scale(1.2);
+}

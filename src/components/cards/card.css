@@ -1,0 +1,80 @@
+.card__list {
+  box-shadow: 0 0 1em #000;
+  padding: 0.4em;
+  transition: 0.5s;
+}
+.card__list:hover {
+  transform: scale(1.1);
+}
+.link {
+  text-decoration: none;
+  color: #222;
+}
+.card__div {
+  display: flex;
+  font-family: "Roboto Flex";
+}
+.card__list-img {
+  width: 100px;
+}
+
+.card__container-list {
+  /* background: black; */
+  background: #ffffff60;
+  display: flex;
+  flex-flow: column;
+  padding: 0 0.3em;
+}
+.card__h4-list {
+  width: 770px;
+  margin: 0;
+  padding: 0;
+  /* background: red; */
+  padding: 0 0.2em;
+  font-family: "Yusei Magic";
+}
+.card__description-list {
+  width: 770px;
+  margin: 0;
+  padding: 0;
+  /* background: green; */
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.2em;
+  align-items: center;
+}
+.card__intermedia {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+}
+.intermedia__attribute {
+  font-weight: bold;
+  padding: 0 0.4em 0 0;
+}
+.intermedia__nivel {
+  font-weight: bold;
+  border-left: 1px solid #000;
+  padding: 0 0 0 0.4em;
+}
+.intermedia__img {
+  width: 1.2em;
+}
+.intermedia__monstruo {
+  font-weight: bold;
+  border-left: 1px solid #000;
+  padding: 0 0 0 0.4em;
+}
+.intermedia__atkdef {
+  font-weight: bold;
+}
+.card__p-list {
+  width: 770px;
+  margin: 0;
+  padding: 0;
+  /* background: blue; */
+  padding: 0 0.2em;
+  font-size: 0.9em;
+  line-height: 1;
+}
