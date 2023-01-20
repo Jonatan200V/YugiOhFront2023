@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import useContextApp from '../../Store/useContextApp';
+import useContextApp, { api } from '../../Store/useContextApp';
 import Boton from '../button/Boton';
 import Carta from '../carta/Carta';
 // const URL = "https://apiygo.vercel.app";
-const URL = 'http://localhost:3600/api/yugioh';
+const URL = `${api}/api/yugioh`;
 
 const Cartas = () => {
   const store = useContextApp();

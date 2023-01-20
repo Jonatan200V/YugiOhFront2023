@@ -5,6 +5,7 @@ import './decktendencies.css';
 import '../ModalDeck/modal.css';
 import Modal from '../Modal/Modal';
 import { useEffect } from 'react';
+import { api } from '../../Store/useContextApp';
 const DeckTendencies = () => {
   let Decks = [
     { deek, Deck: 'Blue Eyes', id: '1', deckContain: blueEyes },
@@ -15,7 +16,7 @@ const DeckTendencies = () => {
   const [decks, setDecks] = useState(Decks);
   useEffect(() => {
     const getDecks = async () => {
-      const res = await fetch('http://localhost:3600/api/deck');
+      const res = await fetch(`${api}/api/deck`);
       let data = await res.json();
       const newDate = data.map((deck) => ({
         id: deck.idDeck,

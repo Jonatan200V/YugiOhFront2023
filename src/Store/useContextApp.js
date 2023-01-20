@@ -1,6 +1,6 @@
 import { useContext, createContext, useState } from 'react';
 import Cartas from '../components/cartas/Cartas';
-
+export const api = 'https://yugiohback2023-production.up.railway.app';
 const ContextApp = createContext({
   cartas: [],
   cartasCop: [],

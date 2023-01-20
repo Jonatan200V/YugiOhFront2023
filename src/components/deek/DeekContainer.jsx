@@ -1,4 +1,4 @@
-import useContextApp from '../../Store/useContextApp';
+import useContextApp, { api } from '../../Store/useContextApp';
 import './deek.css';
 import Card from './Card';
 import { useState } from 'react';
@@ -21,7 +21,7 @@ const DeekContainer = () => {
     const arrayImages = deek.map((card) => card.image);
     console.log(arrayImages);
     try {
-      const res = await fetch('http://localhost:3600/api/deck', {
+      const res = await fetch(`${api}/api/deck`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
