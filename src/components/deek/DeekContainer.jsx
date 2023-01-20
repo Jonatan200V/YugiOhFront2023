@@ -19,7 +19,6 @@ const DeekContainer = () => {
 
   const createDeck = async () => {
     const arrayImages = deek.map((card) => card.image);
-    console.log(arrayImages);
     try {
       const res = await fetch(`${api}/api/deck`, {
         method: 'POST',
@@ -32,10 +31,7 @@ const DeekContainer = () => {
         }),
       });
       const data = await res.json();
-      console.log(data);
-    } catch (error) {
-      console.log(error);
-    }
+    } catch (error) {}
   };
   return (
     <div className='container__deek'>

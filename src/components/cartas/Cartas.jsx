@@ -15,8 +15,7 @@ const Cartas = () => {
       .then((res) => res.json())
       .then((response) => {
         return crearCarta(response);
-      })
-      .catch((err) => console.log(err));
+      });
   }, []);
 
   const handleClickSuma = () => {
